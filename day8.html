@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #d1{
+        height: 10vh;
+        width: 50vw;
+        background-color: aqua;
+        /* box-shadow: 10px 25px 30px 45px; */
+        cursor: pointer;
+        transition:3s all;
+    }
+    #d1:hover{
+        box-shadow: 5px 5px 5px 3px green;
+    }
+    button{
+        padding: 8px;
+        border-radius: 10px;
+        background-color: rgb(187, 187, 23);
+        color: brown;
+        font-size: large;
+    }
+    button:hover{
+        box-shadow: 5px 5px 5px 9px royalblue;
+    }
+    li{
+        list-style:circle;
+    }
+    p{
+        word-break: break-all;
+    }
+    #d2{
+        width: 10vw;
+        height: 10vh;
+        background-color: aquamarine;
+        animation-name: example1;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    @keyframes example1 {
+        0%{
+            background-color: black;
+            transform: skew(20deg);
+        }
+        20%{
+            background-color: blue;
+            transform: rotate(40deg);
+        }
+        50%{
+            transform: translateY(200px);
+            background-color: brown;
+                        opacity: 0;
+        }
+        100%{
+            transform: translateX(200px);
+            background-color: rgb(72, 11, 147);
+
+        }
+
+     
+    }
+
+    #nav{
+        height:8vh;
+        width: 100vw;
+        background-color: rgb(19, 178, 42);
+        display: flex;
+        justify-content: space-between;
+    }
+    #left,#right{
+        width:30%;
+        display:flex;
+        justify-content: space-between;
+    }
+    #navMobile{
+        height:8vh;
+        width: 100vw;
+        background-color: rgb(187, 23, 23);
+        /* display: flex; */
+        display:none;
+        /* justify-content: space-between; */
+    }
+    @media screen and (max-width: 600px){
+        #navMobile{
+        display: flex;
+        justify-content:space-between;
+        }
+        #nav{
+             display: none !important;  /* is to override */
+        }
+    }
+
+
+</style>
+<body>
+    
+<!-- //box-shadow  left,right  top,bottom,  blur,  -->
+<!-- <div id="d1"> -->
+
+    <!-- fontstyle
+    liststyle
+    ptag - white-space:nowrap
+    wordbreak -->
+
+<!-- </div> -->
+
+
+    <button>Submit</button>
+
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>banana</li>
+        <li>Mango</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae voluptates suscipit delectus a modi, doloribus harum voluptatum, dolore blanditiis soluta omnis libero tempore quisquam provident eius, similique impedit ipsum ullam.
+    </p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>class</th>
+        </tr>
+        <tr>
+            <td>Indira</td>
+            <td>IT</td>
+        </tr>
+    </table>
+
+    <div id="d2">
+<!-- NAME, duration, time  -->
+    </div>
+
+    <!-- for mobilesiz -->
+     <div id="navMobile">
+        <p>Home</p>
+        <p>Home</p>
+        <p>Home</p>
+        <p>Home</p>
+     </div>
+     <div id="nav">
+        <p>Home</p>
+        <p>Home</p>
+        <p>Home</p>
+        <p>Home</p>
+     </div>
+</body>
+</html>

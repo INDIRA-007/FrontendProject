@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="measurement-tabs-vectors.jpg" alt="">
+    <!-- <map name=""></map>  can be used along with image tag to create clickable areas on an image -->
+     <img usemap="#image-map" src="measurement-tabs-vectors.jpg" alt="carimg">
+     <map name="image-map">
+         coords left, top, right, bottom
+         <area shape="circle" coords="100,50,50" href="https://www.google.com" alt="Google">
+     </map>
+     <details>
+         <summary>Click me</summary>
+         <p>Details about the topic</p>  <!-- details & summary tags are used to create a collapsible section. -->
+    </details>
+
+
+    <fieldset>
+        <legend> form for education</legend>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+    </fieldset>
+
+    <progress max="100" value="50">  <!-- progress tag is used to create a progress bar -->
+        <!-- 50% Complete for loading, downloading, uploading, etc. -->
+
+    </progress>
+    <progress>      </progress>
+
+    <meter max="100" value="50"></meter>
+
+    <table>
+        <caption>Table Caption</caption> <!-- caption tag is used to add a caption to the table -->
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <marquee style="height:150" behavior="alternate" direction="right">This is for announcment</marquee> <!--  default right to left, can be used to create a scrolling text effect. -->
+
+    for zigzag effect, use the `behavior` attribute with the value `alternate`.
+    <marquee style="height:150px" behavior="alternate" direction="up">
+        <marquee behavior="alternate" direction="left">
+            This is for zigzag effect
+        </marquee>
+    </marquee>
+
+    <audio controls autoplay>
+        <source src="audio.mp3" type="audio/mpeg"> <!-- audio tag is used to add audio to the webpage, controls attribute is used to add play, pause, volume controls -->
+        Your browser does not support the audio element.
+    </source>
+    </audio>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4"> <!-- video tag is used to add video to the webpage, controls attribute is used to add play, pause, volume controls -->
+        Your browser does not support the video element.
+    </video>
+
+    <abbr title="World health Organization">WHO</abbr>
+<figure>
+    <img src="measurement-tabs-vectors.jpg" alt="Image description">
+    <figcaption>Image caption</figcaption> <!-- figure & figcaption tags are used to add a caption to the image -->
+</figure>
+
+    <article>
+        <h2>Article Title</h2>
+        <p>This is an article.</p> <!-- article tag is used to define an independent piece of content -->   
+    </article>
+
+    <code>console.log("Hello World")</code> <!-- code tag is used to add code to the webpage, it is a semantic tag -->
+
+    <textarea rows="4" cols="50" placeholder="Enter your text here"></textarea> <!-- textarea tag is used to create a multi-line text input field, rows and cols attributes are used to specify the size of the textarea -->
+
+
+</body>
+</html>

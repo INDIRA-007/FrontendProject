@@ -1,0 +1,102 @@
+.bggrid
+{
+    height:100vh;
+    width:100vw;
+    background-color: azure;
+    display:flex;
+    justify-content:space-around;
+    border: 5px solid blueviolet;
+}
+
+#grid1
+{
+    height:50%;
+    width:25%;
+    background-color:blanchedalmond;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    column-gap:70px;
+    row-gap: 20px;
+    align-content: center;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 10px;
+    margin-top:50px;
+}
+#grid2
+{
+    height:50%;
+    width:25%;
+    background-color: burlywood;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    column-gap:70px;
+    row-gap: 20px;
+    align-content: center;
+    border: 3px solid rgb(115, 68, 6);
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 10px;
+    margin-top:50px;
+}
+#grid3
+{
+    height:50%;
+    width:25%;
+    background-color: cadetblue;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    column-gap:70px;
+    row-gap: 20px;
+    align-content: center;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 10px;
+    margin-top:50px;
+}
+#grid4
+{
+    height:50%;
+    width:25%;
+    background-color: cornflowerblue;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    column-gap:70px;
+    row-gap: 20px;
+    align-content: center;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:50px;
+}
+#imagescroll
+{
+    height:60%;
+    width:100vw;
+    background-color: sienna;
+    display:flex;
+    justify-content: space-around;
+    border:black solid 2px;
+    
+}
+#imagescrollmain{
+    height:100vh;
+    width:100vw;
+    background-color: yellowgreen;
+    display:flex;
+    justify-content: space-around;
+}
+#imagescroll1{
+    height:50%;
+    width:30%;
+    background-color: lightcoral;
+}
+#imagescroll2{
+    height:50%;
+    width:30%;
+    background-color: lightseagreen;
+}

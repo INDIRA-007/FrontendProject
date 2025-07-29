@@ -1,0 +1,117 @@
+#discountnavbar{
+    height:6vh;
+    width: 100vw;
+    background-color: rgb(20, 97, 90);
+    color: white;
+    text-align: center;
+    align-content: center;
+    /* padding-bottom:10px; */
+    position: fixed;
+}
+#navbar1{
+    height:6vh;
+    width:100vw;
+    background-color: rgb(202, 203, 203);
+    display: flex;
+    justify-content: center;
+    text-indent: 50px;
+    text-align: center;
+    font-family: Manrope,sans-serif;
+    font-size: .75rem;
+    padding-top: 15px;
+}
+#navbar2bgspace{
+    /* align-content: center; */
+    padding-left:40px;
+    padding-right:40px;
+    /* background-color: chocolate; */
+}
+#navbar2{
+    height: 10vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-around;
+}
+#navbar2left{
+    width:40%;
+    align-content: center;
+    /* display: flex;
+    justify-content: space-around; */
+    /* background-color: brown; */
+}
+#navbar2center{
+    align-content: center;
+    /* background-color: brown; */
+}
+#navbar2right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+}
+#navbar3{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    text-indent: 50px;
+    font-family: Manrope, sans-serif;
+    border-color: rgb(228, 226, 226);
+    border-bottom-style: solid;
+    border-bottom-width:thin;
+    border-top-style: solid;
+    border-top-width:thin;
+    position: relative;
+    padding-top: 12px;
+}
+#adcontainer{
+    height: 55vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 90px;
+    margin-right: 120px;
+}
+#navbar2righticon
+{
+    font-size:27px;
+    color: gray;
+}
+#maincategory{
+    height: 50vh;
+    /* width: 100vw; */
+    background-color: brown;
+}
+#deliverable{
+    align-content: center;
+    margin-right: 50px;
+    margin-left: 90px;
+
+}
+#img_{
+    /* width: 500vw; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+     /* margin-right: 50px;
+    margin-left: 90px; */
+}
+#exploretag{
+    font-family: Poppins,sans-serif;
+    font-size: 1.25rem;
+    color: #9d6a37;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+#explore{
+    padding-bottom: 75px;
+}
+#img_1{
+display: flex;
+justify-content: center;
+}
+#_margin{
+    margin-right: 120px;
+    margin-left: 90px;
+}

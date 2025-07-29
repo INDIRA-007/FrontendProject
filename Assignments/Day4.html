@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles1.css">
+    <!-- This is an internal CSS style block -->    
+     <style>
+        /* body {
+            background-color: lightblue;
+        } */
+        p {
+            color: green;
+            font-size: 18px;
+        }   
+        #content1 {
+            color: blue;
+            font-size: 20px;
+            font-style: italic;
+        }
+        #tblheader {
+            background-color: #d3d3d3;
+            font-weight: bold;
+            text-align: center;
+            text-size-adjust: 20px;
+        }
+
+        .tbldata {
+            background-color:yellow;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to our travel guide!</h1>
+    <div>
+        <img src="img_mountains.jpg" alt="Placeholder Image" style="width:30%;">
+        <img src="img_snow.jpg" alt="Placeholder Image" style="width:30%;">
+    </div>
+    <br>
+    <p id="content1">Explore the beauty of India with our curated list of top places to visit.</p>
+    <p class="highlight">
+        Discover the rich culture, stunning landscapes, and vibrant cities that make India a must-visit destination.
+    </p>
+
+    <iframe src="https://www.holidify.com/country/india/places-to-visit.html" width="300" height="300"></iframe>
+<br>
+    <table>
+        <caption>Budget Details</caption> <!-- caption tag is used to add a caption to the table -->
+        <thead>
+            <tr id="tblheader">
+                <th>Day planner</th>
+                <th>Costs</th>
+            </tr>
+        </thead>
+        <tbody class="tbldata">
+            <tr>
+                <td>3 days</td>
+                <td>Rs.10,000</td>
+            </tr>
+            <tr>
+                <td>5 days</td>
+                <td>Rs. 15,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <details>
+        <summary>Click to see more details</summary>
+        <p>We offer a variety of travel packages to suit your needs. Whether you're looking for a short getaway or an extended vacation, we have something for everyone.</p>    
+    </details>
+    <progress max="100" value="50">  <!-- progress tag is used to create a progress bar -->
+        50% Complete        
+    </progress>
+
+    <fieldset>
+        <legend>Room bookings</legend>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+    </fieldset>
+        
+
+
+    
+</body>
+</html>

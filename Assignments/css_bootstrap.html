@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #navbar{
+        height:7vh;
+        width:100vw;
+        background-color: rgba(113, 44, 249, 1);
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    #center{
+        border-radius: 10px;
+    }
+    #left, #right{
+        height:100%;
+        width:30%;
+        /* background-color: aquamarine; */
+        display:flex;
+        justify-content: space-around;
+    }
+    #main{
+        width:100vw;
+        height:100vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    #leftmain{
+        height:100%;
+        width:20%;
+        /* background-color: yellow; */
+        position:fixed;
+        left:0;
+    }
+    #centremain{
+        height:100%;
+        width:60%;
+        /* background-color: lightblue; */
+    }
+    #rightmain{
+        height:100%;
+        width:20%;
+        /* background-color: yellow; */
+        position:fixed;
+        right:0;
+    }
+    #navMobile{
+        height: 8vh;
+        /* width: 100vw; */
+        background-color: rgba(113, 44, 249, 1);
+        display:flex;
+        display: none;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 400px) {
+        #navMobile{
+            display:flex;
+            justify-content: space-between;
+        }
+        #navbar{
+            display: none !important;
+        }
+        
+    }
+
+
+
+</style>
+
+<body>
+    <div id="navMobile">
+            <p>Header</p>
+            <p>search</p>
+            <p>...</p>
+    </div>
+    <div id="navbar">
+        <div id="left">
+            <p>Docs</p>
+            <p>Examples</p>
+            <p>Icons</p>
+            <p>Themes</p>
+            <p>Blog</p>
+        </div>
+        <input type="text" placeholder="search" id="center">
+        <div id="right">
+            <p>Platform</p>
+            <p>Version</p>
+            <p>Themes</p>
+        </div>
+
+    </div>
+    <div id="main">
+        <div id="leftmain">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Bootstrap</p>
+            <p>React</p>
+            <p>Angular</p>
+            <p>Vue.js</p>
+            <p>Node.js</p>
+
+        </div>
+        <div id="centremain">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda neque aperiam ut nisi! Iure distinctio quod vero molestiae et amet sequi magnam voluptate obcaecati! Amet, cumque. Laudantium quae aspernatur harum?</p> -->
+
+        </div>
+        <div id="rightmain">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Bootstrap</p>
+            <p>React</p>
+            <p>Angular</p>
+            <p>Vue.js</p>
+            <p>Node.js</p>
+
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
