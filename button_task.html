@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="div_click()">
+        <button onclick="btn_click()">Button 1</button>
+        <button onclick="btn_click2()"> Button 2</button>
+    </div>
+</body>
+<script>
+    function div_click(){
+        console.log("Div is visible");
+        
+    }
+    function btn_click()
+    {
+        console.log("Button is visible");
+        //event.stopImmediatePropagation();
+    }
+    function btn_click2()
+    {
+        console.log("Button2 is visible");
+        event.stopPropagation();
+    }
+</script>
+</html>

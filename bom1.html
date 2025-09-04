@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- browser object model - only browser(page reload, forward page, backward page, forum validation, confirmation pop message) -->
+     <!-- screen, navigator, location, history, alert, confirm, prompt -->
+    <!-- screen - to display the message or disable when screen is adjusted  -->
+
+     <script>
+        if(localStorage.getItem("user"))
+     {
+        localStorage.href="auth.html";
+     }
+        // console.log(screen.availWidth); //to track the screenwidth
+        // if(screen.availWidth <600)
+        // {
+        //     alert("hello")
+        // }
+
+        //navigator - acceptallcookies
+            // information is stored and shows as a suggestions
+            // console.log("to display cookies",navigator.cookieEnabled);
+        //location - to move from one website to another website, 
+            //for dynamic website, to authenticate, to validate before moving to another pages
+            //navigate to other pages/websites with some conditions in JS
+            //purpose 1 - navigate to other page with some conditions
+            //purpose 2 - Url (host/port/path)(127.0.0.1:8080/bom1.html), to view certain Url informaiton
+        // console.log(location.hostname);
+        // console.log(location.port);
+        // console.log(location.pathname);
+   
+        //location.href="https://www.google.com"
+        // location.href = "/"
+
+        //history
+        //In JS, how to navigate / go back to previous page
+        // history.back();
+        // history.forward();
+
+        //dom - when the event occurs, the function call occurs
+        //dom + bom
+
+        //confirm
+        // let f = confirm("Do you want to exit: ");
+
+        //local storage - it clears the data when closing tab or switching to another browser
+        //local storage - within the broswer nad outside of the tab
+        //session storage - within the tab/page
+        //cookies - even after closing the browser the data is stores in the cookies for specific periods
+
+        
+        
+        // localStorage.setItem("user","javascript");
+        //  sessionStorage.setItem("user","javascript");
+
+        //let - block scope, 
+            //supports hoisting (declare the variable and assign the value)
+            //introduced in higher version
+        //var - global scope, 
+            //no need for support hoisting (can assign the value while declaring the variable)
+            //introduced at the earlier stage of javascript
+        //const - similar to let (blocked scope)
+            //cannot modify its value
+
+        //dom related questions
+        
+        // let arr=[1,2,3,13]
+        // arr.filter( (num) => return num %2 !=0 )
+
+        //anagram
+        // //listen, silent
+        // let st ="listen"
+        // let st1 = "silent"
+        // let s_char = st.split("").sort(null); //ascending order
+
+        // console.log(st.split("").sort(null) ==  st1.split("").sort(null))
+
+   </script>
+
+    //find unique character in a word
+        //hello world javascript
+        //split the word
+        //["Hello","world","javascript"]
+        //find the character
+
+ let ans = ["Hello","world","javascript"].map( (e) => {
+        return e.split("").find((ele,i,arr) => { return arr.indexof(ele) == arr.lastIndexOf(ele) })
+        })
+
+        console.log(ans);
+
+
+
+
+</body>
+</html>

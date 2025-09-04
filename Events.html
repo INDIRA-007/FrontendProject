@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button disabled onclick="buttonclick()">Show/hide</button>
+    <p id="ptag">I'm javascript</p>
+    <input onchange="newtext(this)" type="text">
+    <script>
+        let flag = true;
+        function newtext(e){
+            document.getElementById("ptag").innerText = e.value;
+            if(e.value == "Hello World")
+        {
+            document.getElementsByTagName("button")[0].disabled = false;
+        }
+        else{
+            document.getElementsByTagName("button")[0].disabled = true;
+        }
+        }
+
+        function buttonclick()
+        {
+            flage = !flag;
+            if(flag)
+        {
+            document.getElementById("ptag").style.display = "block";
+        }
+        else{
+            document.getElementById("ptag").style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

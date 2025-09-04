@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Add Images</button>
+    <img src="Assignments/himalays.jpg" height="150vh" width="150vh" alt="">
+    <script>
+        function AddImage()
+    {
+        let img = document.createElement("img");
+        img.src ="Assignments/himalays.jpg";
+        img.height = 150;
+        img.width = 150;
+        document.body.append(img);
+    }
+
+
+        document.getElementsByTagName("button")[0].addEventListener("click",AddImage);
+    </script>
+
+
+
+
+
+</body>
+</html>

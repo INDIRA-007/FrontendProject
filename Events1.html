@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="click1()">Show/Hide</button>
+    <p id ="p1">Hello there</p>
+
+    <input type="text" onchange="OpenText(this)">
+    <span id="sp"></span>
+    <br>
+    <br>
+    <button onclick="click2()">Show/Hide1</button>
+
+    <script>
+
+        let flag = true;
+
+        function click1(){
+            flag = !flag;
+            if(flag)
+        {
+            document.getElementById("p1").style.display = "block";
+        }
+        else{
+            document.getElementById("p1").style.display = "none";
+        }
+        }
+
+        function OpenText(e)
+        {
+            console.log(e.value);
+            if(e.value == "admin")
+        {
+            document.getElementsByTagName("button")[0].disabled = false;
+        }
+        else{
+            document.getElementsByTagName("button")[0].disabled = true;
+        }
+            document.getElementById("p1").innerText = e.value;
+        }
+
+        let flag1 = true;
+
+        function click2(){
+            flag1 = !flag1;
+            if(flag1)
+        {
+            document.getElementById("p1").style.display = "block";
+        }
+        else{
+            document.getElementById("p1").style.display = "none";
+        }
+        }
+
+        document.getElementsByTagName("button")[1].addEventListener("click",click2);
+
+
+    </script>
+</body>
+</html>

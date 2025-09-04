@@ -1,0 +1,40 @@
+<!-- //authentication - sign up / it allows to sign / two-step authentication
+//authorization - based on the login / role / domain -->
+
+<input type="text" placeholder="Enter ur name" name="username" onchange="changeText(this)">
+<input type="text" placeholder="Enter password" name="password" onchange="changeText(this)">
+
+<button onclick="login()">Login</button>
+
+<script>
+    let username;
+    let password;
+
+    function changeText(e)
+    {
+        if(e.name = "username")
+    {
+        username = e.value;
+    }
+    else{
+        password = e.value;
+    }
+    }
+
+    function login()
+    {
+        if(!username){
+            alert("invalid username");
+        }
+        if(password=="admin123")
+    {
+        localStorage.setItem("user", username);
+        location.href="boom1.html";
+    }
+    else{
+        alert("Ivalid password")
+    }
+
+
+    }
+</script>

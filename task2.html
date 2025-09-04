@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Name</p>
+    <input type="text" id="name" onchange="TextArea(this)">
+    <span id="Validatename"></span>
+    <br>
+
+    <p>Domain</p>
+    <input type="text" id="domain" onchange="TextArea(this)">
+    <span id="Validatedomain"></span>
+    <br>
+
+    <p>Location</p>
+    <input type="text" id="location" onchange="TextArea(this)">
+    <span id="Validatelocation"></span>
+    <br>
+    <br>
+
+    <button disabled id="submit" >Submit</button>
+
+    <script>
+        function TextArea()
+        {
+            let name = document.getElementById("name").value;
+            let domain = document.getElementById("domain").value;
+            let location = document.getElementById("location").value;
+
+            document.getElementById("Validatename").innerText = "";
+            document.getElementById("Validatedomain").innerText = "";
+            document.getElementById("Validatelocation").innerText = "";
+
+            let isValid = false;
+            if(name === "") {
+                document.getElementById("Validatename").innerText = "Mandatory field";
+                isValid = true;
+            }
+            if(domain === "") {
+                document.getElementById("Validatedomain").innerText = "Mandatory field";
+                isValid = true;
+            }
+            if(location === "") {
+                document.getElementById("Validatelocation").innerText = "Mandatory field";
+                isValid = true;
+            }
+
+            document.getElementById("submit").disabled = isValid;
+        }
+    </script>
+
+
+
+
+</body>
+</html>

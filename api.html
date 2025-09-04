@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetching api call -->
+
+    <input type="text" placeholder="Enter the value" onchange="changeText(this)">
+
+    <br>
+    <br>
+    <button onclick="callApi()">Get Transaction</button>
+    <button onclick="nextBtn()">Next</button>
+    <p id="load" style="display:none;">Loading...</p>
+
+    <div id="d1"></div>
+
+    <script>
+        let start =0;
+        let end = 10;
+
+        let transactionId = 0;
+        function changeText(e){
+            transactionId = parseInt(e.value);
+        }
+
+        function callApi()
+        {
+            document.getElementById("load").style.display="block";
+            fetch("https://fake.jsonmockapi.com/transactions?length="+transactionId)
+            .then((re)=>re.json())
+            .then((res)=>{
+                console.log(res);
+                document.getElementById("load").style.display="none";
+                for(let i=0; i<10; i++)
+            {
+                let newPtag = document.createElement("p");
+                newPtag.innerText = res[i].amount;
+                document.getElementById("d1").append(newPtag)
+            }
+            })
+        }
+
+        function nextBtn()
+        {
+            start +=10;
+            end += 10;
+            for(let i=start; i<end; i++)
+        {
+            let newPtag = document.createElement("p");
+            newPtag.innerText = res[i].amount;
+            document.getElementById("d1").append(newPtag)
+        }
+        }
+
+    </script>
+
+</body>
+</html>
