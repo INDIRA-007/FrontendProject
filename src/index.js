@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Hello from './hello';
+import Classcomp from './classComp';
+import Counter from './counter';
+import MyComponent from './classLife';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  {/* <Hello /> */}
+  {/* <Classcomp /> */}
+  {/* <Counter /> */}
+  <MyComponent />
   </React.StrictMode>
 );
 
