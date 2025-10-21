@@ -7,13 +7,24 @@ import Hello from './hello';
 import Classcomp from './classComp';
 import Counter from './counter';
 import MyComponent from './classLife';
+import Users from './users';
+import TodoApp from './TodoApp';
+import Ref from './ref';
+import Parent from './Parent';
+import Counters from './callback';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   {/* <Hello /> */}
   {/* <Classcomp /> */}
   {/* <Counter /> */}
-  <MyComponent />
+   {/* <MyComponent /> */}
+  {/* <Users /> */}
+  {/* <TodoApp /> */}
+  {/* <Ref /> */}
+  {/* <Parent /> */}
+  <Counters />
+
   </React.StrictMode>
 );
 
