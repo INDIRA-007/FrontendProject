@@ -12,6 +12,7 @@ import TodoApp from './TodoApp';
 import Ref from './ref';
 import Parent from './Parent';
 import Counters from './callback';
+import Theme from './Theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -23,7 +24,8 @@ root.render(
   {/* <TodoApp /> */}
   {/* <Ref /> */}
   {/* <Parent /> */}
-  <Counters />
+  {/* <Counters /> */}
+  <Theme/>
 
   </React.StrictMode>
 );
