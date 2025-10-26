@@ -3,9 +3,9 @@
 function Counter()
 {
     let count=0;
-    increment = () =>{
-        count +=1
-    }
+    // increment = () =>{
+    //     count +=1
+    // }
     return(
         <>
 

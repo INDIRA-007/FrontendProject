@@ -13,6 +13,7 @@ import Ref from './ref';
 import Parent from './Parent';
 import Counters from './callback';
 import Theme from './Theme';
+import Forms from './Forms';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -25,8 +26,9 @@ root.render(
   {/* <Ref /> */}
   {/* <Parent /> */}
   {/* <Counters /> */}
-  <Theme/>
-
+  {/* <Theme/> */}
+    {/* <App /> */}
+    <Forms />
   </React.StrictMode>
 );
 
